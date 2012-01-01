@@ -12,6 +12,20 @@
 
 </head>
 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4635324-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 <body>
 <div id="header">
 	<div id="main">	
@@ -26,6 +40,21 @@
 			<input type="checkbox" name="chkObfuscate" id="chkObfuscate" <?=isset($_POST['chkObfuscate']) ? 'checked' : '' ?> /> <label for="chkObfuscate">Include code obfuscation (Javascript, SQL, HTML)</label><br />
 			<input type="submit" name="cmdEncode" value="Encode string" class="submit_button" /> <input type="submit" name="cmdDecode" value="Decode string" class="submit_button" />
 		</form>
+
+		<div style="padding-top: 25px; width: 750px; text-align: center;">
+<!-- Begin: adBrite, Generated: 2012-01-01 16:07:22  -->
+<script type="text/javascript">
+var AdBrite_Title_Color = '0000FF';
+var AdBrite_Text_Color = '000000';
+var AdBrite_Background_Color = 'FFFFFF';
+var AdBrite_Border_Color = 'CCCCCC';
+var AdBrite_URL_Color = '008000';
+try{var AdBrite_Iframe=window.top!=window.self?2:1;var AdBrite_Referrer=document.referrer==''?document.location:document.referrer;AdBrite_Referrer=encodeURIComponent(AdBrite_Referrer);}catch(e){var AdBrite_Iframe='';var AdBrite_Referrer='';}
+</script>
+<span style="white-space:nowrap;"><script type="text/javascript">document.write(String.fromCharCode(60,83,67,82,73,80,84));document.write(' src="http://ads.adbrite.com/mb/text_group.php?sid=2074664&zs=3732385f3930&ifr='+AdBrite_Iframe+'&ref='+AdBrite_Referrer+'" type="text/javascript">');document.write(String.fromCharCode(60,47,83,67,82,73,80,84,62));</script>
+<a target="_top" href="http://www.adbrite.com/mb/commerce/purchase_form.php?opid=2074664&afsid=1"><img src="http://files.adbrite.com/mb/images/adbrite-your-ad-here-leaderboard.gif" style="background-color:#CCCCCC;border:none;padding:0;margin:0;" alt="Your Ad Here" width="14" height="90" border="0" /></a></span>
+<!-- End: adBrite -->
+		</div>
 		<?php
 			if (isset($_POST['cmdEncode']) && strlen($_POST['txtCode']) > 0) {
 				// Encode this string
