@@ -187,7 +187,7 @@
 	</div>
 
 	<div id="footer">
-		String decoder &amp; encoder | Created by <a href="http://mattiasgeniar.be" target="_blank">Mattias Geniar</a>
+		String decoder &amp; encoder | Created by <a href="http://mattiasgeniar.be" target="_blank">Mattias Geniar</a> | Source on <a href="https://github.com/mattiasgeniar/Encoder" target="_blank">Github</a>
 	</div>
 </div>
 </body>
