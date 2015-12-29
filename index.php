@@ -29,7 +29,7 @@
 <body>
 <div id="header">
   <div id="main">
-    <h1><u>De</u>codess, <u>En</u>code or <u>Ob</u>fuscate your string</h1>
+    <h1><u>De</u>code, <u>En</u>code or <u>Ob</u>fuscate your string</h1>
     <p>This is used to obfuscate your string or code, to encode or decode a certain value. For more information on possible XSS/XSRF implementations, see <a href="http://ha.ckers.org/xss.html" target="_blank">http://ha.ckers.org/xss.html</a>.</p>
     <hr />
     <form method="post" action="index.php">
