@@ -1,5 +1,5 @@
 <?php
-  // Check for the basics
+  // Check for form submit
   if (!isset($_POST['cmdEncode']) && !isset($_POST['cmdDecode'])) {
     // User has not yet submitted
     $_POST['chkBasics']= true;
