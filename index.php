@@ -134,11 +134,11 @@
           echo "<h1>Obfuscation: HTML</h1>\n";
           // hexadecimal
           echo "<h2>HTML Hexadecimal with optional semicolons</h2>\n";
-          echo "<xmp>". implode(";", $arrCharCodeHexHtml) ."</xmp>\n\n";
+          echo "<xmp>". implode(";", $arrCharCodeHexHtml) .";</xmp>\n\n";
 
           // decimal
           echo "<h2>HTML Decimal with optional semicolons</h2>\n";
-          echo "<xmp>". implode(";", $arrCharCodeDecHtml) ."</xmp>\n\n";
+          echo "<xmp>". implode(";", $arrCharCodeDecHtml) .";</xmp>\n\n";
         }
       } elseif (isset($_POST['cmdDecode']) && strlen($_POST['txtCode']) > 0) {
         // Decode this string
