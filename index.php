@@ -160,7 +160,7 @@
 
           // UTF-32
           echo "<h2>UTF-32 decoded to UTF-8</h2>\n";
-          echo "<xmp>". mb_convert_encoding($txtCode, "UTF-8", array("UTF-16")) ."</xmp>\n\n";
+          echo "<xmp>". mb_convert_encoding($txtCode, "UTF-8", array("UTF-32")) ."</xmp>\n\n";
 
           // rawurlencode
           echo "<h2>RAW URL decoded</h2>\n";
