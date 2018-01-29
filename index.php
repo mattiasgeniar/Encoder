@@ -190,5 +190,47 @@
     String decoder &amp; encoder | Created by <a href="http://mattiasgeniar.be" target="_blank">Mattias Geniar</a> | Source on <a href="https://github.com/mattiasgeniar/Encoder" target="_blank">Github</a>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+<script>
+(function(){
+  // Make copy button for all xmp tags
+  var xmps = document.getElementsByTagName('xmp');
+
+  for(var count = 0; count < xmps.length; count++) {
+    var id = 'copy-'+count;
+
+    var xmp = xmps[count];
+    xmp.id = id;
+
+    var button = document.createElement('a');
+    button.setAttribute("data-clipboard-target", "#"+id);
+    button.innerText = 'Copy text';
+
+    var title = xmp.previousElementSibling;
+    title.appendChild(button);
+  }
+
+  var clipboard = new Clipboard('a[data-clipboard-target]');
+
+  clipboard.on('success', function(e) {
+    var trigger = e.trigger;
+    trigger.innerText = 'Copied!';
+
+    setTimeout(function () {
+        trigger.innerText = 'Copy text';
+    }, 2000);
+
+    e.clearSelection();
+  });
+
+  clipboard.on('error', function(e) {
+    var trigger = e.trigger;
+    trigger.innerText = 'Press Ctrl+c or Cmd+c to copy.';
+    setTimeout(function () {
+        trigger.innerText = 'Copy text';
+    }, 2000);
+  });
+}());
+</script>
 </body>
 </html>
